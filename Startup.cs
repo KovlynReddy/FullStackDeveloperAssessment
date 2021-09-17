@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿using Microsoft.AspNetCore.Builder;
+=======
 using Microsoft.AspNetCore.Builder;
+>>>>>>> 079066216a5086b0181f007ae290835d96b6fff9
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +14,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+using Microsoft.EntityFrameworkCore;
+using FullStackDeveloperAssessment.Data;
+=======
+>>>>>>> 079066216a5086b0181f007ae290835d96b6fff9
 
 namespace FullStackDeveloperAssessment
 {
@@ -26,6 +35,12 @@ namespace FullStackDeveloperAssessment
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+<<<<<<< HEAD
+
+            services.AddDbContext<FullStackDeveloperAssessmentContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("FullStackDeveloperAssessmentContext")));
+=======
+>>>>>>> 079066216a5086b0181f007ae290835d96b6fff9
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
